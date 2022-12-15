@@ -1,5 +1,15 @@
 var app = new Vue(
     {
-        el: '#root'
+        el: '#app',
+        data: {
+            array: [],
+        },
+        mounted(){
+            axios.get("./api/index.php").then((res =>{
+                console.log(res);
+                this.array = res.data;
+            }))
+        }
+        
     }
 );
