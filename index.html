@@ -15,41 +15,47 @@
 <body>
 
     <div id="app">
+        <header class="d-flex align-items-center ps-4">
+            <div>
+                <img src="./img/pngegg.png" alt="" class="logo">
+            </div>
+        </header>
 
 
-    </div>
-    <header class="d-flex align-items-center ps-4">
-        <div>
-            <img src="./img/pngegg.png" alt="" class="logo">
-        </div>
-    </header>
+        <main class="container mt-5">
 
+            <div class="riga">
 
-    <main class="container mt-5">
-
-        <div class="d-flex">
-
-            <!-- <div v-for="(elem, index) in ArrayCard"> -->
+                <!-- <div v-for="(elem, index) in ArrayCard"> -->
 
                 <div class="cards" v-for="(elem, index) in array">
 
                     <div class="image">
                         <img :src="elem.poster" alt="" class="copertina">
                     </div>
-                    <div class="text-center">
+                    <div class="text-center text-white mt-3">
                         <b> {{elem.title}} </b>
                     </div>
-                    <div class="text-center">
+                    <div class="text-center text-white opacity-50 mt-2">
                         {{elem.author}}
                     </div>
-                    <div class="text-center">
+                    <div class="text-center text-white opacity-50">
                         {{elem.year}}
                     </div>
                 </div>
 
-            <!-- </div> -->
+                <!-- </div> -->
 
-        </div>
+            </div>
+
+
+
+
+
+
+
+    </div>
+
 
 
 
